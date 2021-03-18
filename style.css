@@ -20,6 +20,7 @@ textarea {
 .title {
     font-size: 22px;
     font-weight: 400;
+    margin-bottom: 16px;
 }
 .top {
     background: #ffffff; /* white */
@@ -80,9 +81,7 @@ textarea {
 .search input[type=text] {
     background: #fff;
     border: none;
-    border-bottom: solid;
-    border-bottom-width: 1px;
-    border-bottom-color: rgba(151, 151, 151, 1);
+    border-bottom: 1px solid rgba(151, 151, 151, 1);
     outline: none;
     padding: 24px 721px 0px 0px;
     font-size: 16px;
@@ -96,4 +95,164 @@ textarea {
 
 .products {
     margin-top: 136px;
+}
+
+.products__items {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+
+.product__item {
+    margin-bottom: 16px;
+}
+
+.product__title {
+    font-size: 16px;
+    margin-top: 16px;
+}
+
+.product__food {
+    font-size: 14px;
+    margin-top: 4px;
+    color: rgba(98, 98, 98, 1);
+}
+
+.product__delivery {
+    font-size: 13px;
+    margin-top: 4px;
+    margin-bottom: 20px;
+}
+
+
+
+/* FOOTER */
+
+footer {
+    background: rgba(38, 38, 38, 1);
+    padding: 56px 0 40px;
+    width: 100%;
+}
+
+.footer__logo {
+   margin-bottom: 40px;
+   padding-bottom: 32px;
+   border-bottom: 1px solid rgba(255, 255, 255, 1);
+}
+
+
+select {
+    padding: 12px 128px 12px 48px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 13px;
+    background-color: rgba(59, 59, 59, 1);
+    border: 1px solid rgba(59, 59, 59, 1);
+    cursor: pointer;
+    border-radius: 2px;
+
+    -moz-appearance: none
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+}
+
+
+.footer__language {
+    display: inline;
+    position: relative;
+    background: url("images/world.svg") no-repeat 5% 50%;
+}
+
+.footer__language select {
+    background: url("images/arrow_back.svg") no-repeat 95% 50%;
+}
+
+.footer__info {
+    margin-top: 33px;
+}
+
+.info__logo {
+    margin-bottom: 17px;
+}
+
+.footer__social a {
+    margin-right: 12px;
+}
+
+.footer__support {
+    display: flex;
+    margin-bottom: 48px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+}
+
+.footer__support .footer__menu {
+    flex: 0 0 308px;
+    max-width: 308px;
+    margin-right: 16px;
+}
+
+.footer__menu a {
+    color: rgba(255, 255, 255, 1);
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.footer-menu__item {
+    margin-bottom: 23px;
+}
+
+.footer-apps {
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+}
+
+.footer-apps .footer-apps__link {
+    width: 120px;
+    height: 40px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 120px 40px;
+    margin-right: 20px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.footer-apps .footer-apps__link:hover {
+    opacity: 0.4;
+}
+
+.footer-apps .footer-apps__link.appstore {
+    background-image: url("images/app_store.png");
+}
+
+.footer-apps .footer-apps__link.googleplay {
+    background-image: url("images/google.png");
+}
+
+.footer-bottom {
+    display: flex;
+}
+
+.footer-bottom__items a,
+.footer-bottom__items {
+    color: rgba(255, 255, 255, 1);
+    font-size: 11px;
+    text-decoration: none;
+    display: flex;
+}
+
+.footer-bottom__item {
+    flex: 0 0 308px;
+    max-width: 308px;
+    margin-right: 16px;
 }
