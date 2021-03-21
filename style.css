@@ -28,7 +28,7 @@ textarea {
     height: 72px;
     width: 100%;
     top: 0px;
-    position: relative;
+    position: fixed;
     z-index: 10;
 }
 
@@ -88,6 +88,7 @@ textarea {
     float: left;
     color: rgba(98, 98, 98, 1); /* grey */
     width: 100%;
+    margin-bottom: 56px;
 }
 
 
@@ -255,4 +256,32 @@ select {
     flex: 0 0 308px;
     max-width: 308px;
     margin-right: 16px;
+}
+
+.back-to-top {
+    position: fixed;
+    right: 15px;
+    bottom: 30px;
+    width: 80px;
+    height: 80px;
+    border-color: transparent;
+    border-radius: 5%;
+    background-color: #59BD5A;
+}
+
+.back-to-top:hover,
+.back-to-top:focus {
+    filter: brightness(1.5);
+    outline: none;
+}
+
+.back-to-top::before,
+.back-to-top::after {
+    content: url(images/arrow.svg);
+    position: absolute;
+    top: 50%;
+    right: 30%;
+    transform: translate(-50%, -50%);
+    width: 15px;
+    height: 25px;
 }
